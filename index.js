@@ -1,10 +1,16 @@
-let caraMoneda= ;
-let cruzMoneda= ;
+/*Defining a function that:
+Gives the coin a random value between 1 and 2 with the same probabilities
+Each coin's value has a result*/
 
-var caraMoneda = Math.floor(Math.random() * 2);
+function flipCoin(){
 
-while(caraMoneda){
-	console.log("¡Cara! Lanza de nuevo...");
-	var caraMoneda = Math.floor(Math.random() * 2);
+    let valueCoin= Math.floor(Math.random()*2);
+
+    if(valueCoin == 1){
+        console.log("Head!");
+    }
+
+    else {
+        console.log("Tails!"); 
+    }
 }
-console.log("¡Cruz! Lanzamiento concluido.");
